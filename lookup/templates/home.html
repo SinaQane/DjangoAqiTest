@@ -2,9 +2,22 @@
 
 {% block content %}
 
+{% if zipcode %}
+    {{zipcode}}
+{% endif %}
+
 {% if api %}
     {% if api == "Error" %}
-        An error occurred, Please try again...<br/>
+        <div class="jumbotron {{ category_color }} ">
+            <h1 class="display-4">Oops... </h1>
+            <p class="lead">An error occurred, Please try again...</p>
+            <hr class="my-4">
+
+            Make sure you've entered your US ZipCode correctly <br/><br/>
+
+            <a class="btn btn-primary btn-lg" href="https://www.airnow.gov/" role="button">Source</a>
+        </div>
+
     {% else %}
         
         <div class="jumbotron {{ category_color }} ">
@@ -19,6 +32,5 @@
     
     {% endif %}
 {% endif %}
-
 
 {% endblock %}
