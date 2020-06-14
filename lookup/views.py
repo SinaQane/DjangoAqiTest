@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-TOKEN = "1B1D61B5-1FC1-4A1D-A851-B4701F2EBC39"
+TOKEN = "" #Paste your TOKEN here.
 
 # Create your views here.
 def home(request):
