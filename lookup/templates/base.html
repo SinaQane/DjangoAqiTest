@@ -9,11 +9,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <style>
+        .good {background-color: #0C0 ;}
+        .moderate {background-color: #FFFF00 ;}
+        .usg {background-color: #FF9900 ;}
+        .unhealthy {background-color: #FF0000 ;}
+        .veryunhealthy {background-color: #990066 ;}
+        .hazardous {background-color: #660000 ;}
+    </style>
   </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'home' %}">Weather App</a>
+        <a class="navbar-brand" href="{% url 'home' %}">QanQan App</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,11 +29,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">About Me</a>
+              <a class="nav-link" href="{% url 'about' %}">About</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2" type="ZipCode" placeholder="ZipCode" aria-label="ZipCode">
             <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
