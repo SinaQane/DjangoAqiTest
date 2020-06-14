@@ -32,8 +32,9 @@ def home(request):
         
     except Exception:
         api = "Error"
-        category_description = "Coudn't get the results..."
-        category_color = "hazardous"
+        category_description = ""
+        category_color = ""
+
 
     return (render(request, 'home.html', {'api' : api , 'category_description' : category_description, 'category_color' : category_color},
     ))
